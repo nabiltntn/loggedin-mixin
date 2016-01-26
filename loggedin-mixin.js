@@ -1,7 +1,7 @@
 /* global LoggedInMixin:true */
 LoggedInMixin = function(methodOptions) {
     check(methodOptions.checkLoggedInError, Match.ObjectIncluding({
-        code: String,
+        error: String,
         message: String,
         reason: String
     }));
