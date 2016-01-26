@@ -2,8 +2,8 @@
 LoggedInMixin = function(methodOptions) {
     check(methodOptions.checkLoggedInError, Match.ObjectIncluding({
         error: String,
-        message: String,
-        reason: String
+        message: Match.Optional(String),
+        reason: Match.Optional(String)
     }));
     const runFunc = methodOptions.run;
     methodOptions.run = function() {
