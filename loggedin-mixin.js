@@ -10,7 +10,7 @@ LoggedInMixin = function(methodOptions) {
         if (!this.userId) {
             throw new Meteor.Error(...methodOptions.checkLoggedInError);
         };
-        return runFunc(...arguments);
+        runFunc(...arguments);
     }
     return methodOptions;
 }
