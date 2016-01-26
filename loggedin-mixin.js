@@ -1,5 +1,6 @@
 /* global LoggedInMixin:true */
 LoggedInMixin = function(methodOptions) {
+    console.log(JSON.stringify(methodOptions));
     check(methodOptions.checkLoggedInError, Match.ObjectIncluding({
         error: String,
         message: String,
@@ -10,7 +11,8 @@ LoggedInMixin = function(methodOptions) {
         if (!this.userId) {
             throw new Meteor.Error(...methodOptions.checkLoggedInError);
         };
-        runFunc(...arguments);
+        console.log(JSON.stringify(arguments));
+        return runFunc(...arguments);
     }
     return methodOptions;
 }

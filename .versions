@@ -21,7 +21,7 @@ html-tools@1.0.5
 htmljs@1.0.5
 id-map@1.0.4
 jquery@1.11.4
-local-test:tunifight:loggedin-mixin@0.0.3
+local-test:tunifight:loggedin-mixin@0.0.4
 logging@1.0.8
 meteor@1.1.10
 minimongo@1.0.10
@@ -39,7 +39,7 @@ spacebars@1.0.7
 spacebars-compiler@1.0.7
 tinytest@1.0.6
 tracker@1.0.9
-tunifight:loggedin-mixin@0.0.3
+tunifight:loggedin-mixin@0.0.4
 ui@1.0.8
 underscore@1.0.4
 webapp@1.2.3
