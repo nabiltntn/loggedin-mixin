@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tunifight:loggedin-mixin',
-  version: '0.0.6',
+  version: '0.0.7',
   summary: 'A simple logged-in check mixin to use with mdg:validated-method package',
   git: 'https://github.com/nabiltntn/loggedin-mixin.git',
   documentation: 'README.md'
@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
-  api.use(['ecmascript', 'check']);
+  api.use(['ecmascript', 'check', 'underscore']);
   api.addFiles('loggedin-mixin.js');
   api.export('LoggedInMixin');
 });

@@ -8,7 +8,7 @@ LoggedInMixin = function(methodOptions) {
     const runFunc = methodOptions.run;
     methodOptions.run = function() {
         if (!this.userId) {
-            throw new Meteor.Error(...Object.values(methodOptions.checkLoggedInError));
+            throw new Meteor.Error(..._.values(methodOptions.checkLoggedInError));
         };
         return runFunc(...arguments);
     }
