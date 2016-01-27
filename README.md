@@ -16,8 +16,8 @@ const method = new ValidatedMethod({
   mixins : [LoggedInMixin],
   checkLoggedInError: {
     code: 'notLogged',
-    message: 'You need to be logged in to call this method',
-    reason: 'You need to login'
+    message: 'You need to be logged in to call this method',//Optional
+    reason: 'You need to login' //Optional
   },
   validate, // argument validation
   run // Method body
@@ -25,4 +25,4 @@ const method = new ValidatedMethod({
 ```
 
 The LoggedInMixin mixin requires the new `checkLoggedInError` option which includes
-the required informations to throw an Error.
+the required informations to throw an Error. Note that `message` and `reason` are optional.
