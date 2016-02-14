@@ -15,7 +15,7 @@ const method = new ValidatedMethod({
   name, // DDP method name
   mixins : [LoggedInMixin],
   checkLoggedInError: {
-    code: 'notLogged',
+    error: 'notLogged',
     message: 'You need to be logged in to call this method',//Optional
     reason: 'You need to login' //Optional
   },
